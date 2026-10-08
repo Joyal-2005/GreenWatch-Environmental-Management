@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Environmental Inspection" language="en" table="x_2061044_greenw_0_environmental_inspection">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Environmental Inspection</label>
+            <language>en</language>
+            <name>x_2061044_greenw_0_environmental_inspection</name>
+            <plural>Environmental Inspections</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-08 08:46:54</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Environmental Inspection</sys_name>
+            <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+            <sys_update_name>sys_documentation_x_2061044_greenw_0_environmental_inspection__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-08 08:46:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

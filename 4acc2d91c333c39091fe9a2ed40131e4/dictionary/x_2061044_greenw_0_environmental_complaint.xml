@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e1d28f2dc37b479091fe9a2ed40131b0" label=" Environmental Complaint" max_length="40" name="x_2061044_greenw_0_environmental_complaint" type="collection">
+        <element label="Risk Score" max_length="40" name="risk_score" type="integer"/>
+        <element choice="1" label="Severity" max_length="40" name="severity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element label="Reporter Email" max_length="40" name="reporter_email" type="string"/>
+        <element label="Facility" max_length="32" name="facility" reference="x_2061044_greenw_0_environmental_facility" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Compliance Review" sequence="5" value="compliance_review"/>
+                <element inactive_on_update="false" label="Inspection In Progress" sequence="3" value="inspection_in_progress"/>
+                <element inactive_on_update="false" label="Triage" sequence="1" value="triage"/>
+                <element inactive_on_update="false" label="Risk Assessment" sequence="4" value="risk_assessment"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Inspection Assigned" sequence="2" value="inspection_assigned"/>
+            </choice>
+        </element>
+        <element label="Assigned Inspector" max_length="32" name="assigned_inspector" reference="sys_user" type="reference"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Description" max_length="40" name="description" type="html"/>
+        <element label="Reporter Name" max_length="40" name="reporter_name" type="string"/>
+        <element choice="1" label="Issue Type" max_length="40" name="issue_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Soil Pollution" sequence="6" value="soil_pollution"/>
+                <element inactive_on_update="false" label="Landslide" sequence="4" value="landslide"/>
+                <element inactive_on_update="false" label="Waste Dumping" sequence="2" value="waste_dumping"/>
+                <element inactive_on_update="false" label="Chemical Spill" sequence="3" value="chemical_spill"/>
+                <element inactive_on_update="false" label="Air Pollution" sequence="1" value="air_pollution"/>
+                <element inactive_on_update="false" label="Water Pollution" sequence="0" value="water_pollution"/>
+                <element inactive_on_update="false" label="Noise Pollution" sequence="5" value="noise_pollution"/>
+            </choice>
+        </element>
+        <element choice="1" label="Risk Level" max_length="40" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Critical" sequence="2" value="critical"/>
+            </choice>
+        </element>
+        <element label="Submitted Date" max_length="40" name="submitted_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Evidence" max_length="40" name="evidence" type="file_attachment"/>
+        <element label="Assigned Team" max_length="32" name="assigned_team" reference="sys_user_group" type="reference"/>
+        <element label="Target Resolution Date" max_length="40" name="target_resolution_date" type="glide_date"/>
+        <element label="Complaint Number" max_length="40" name="complaint_number" type="float"/>
+        <element label="Reporter Phone" max_length="40" name="reporter_phone" type="string"/>
+        <element choice="1" label="priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="P4 – Low" sequence="3" value="p4_low"/>
+                <element inactive_on_update="false" label="P2 – High" sequence="1" value="p2_high"/>
+                <element inactive_on_update="false" label="P1 – Critical" sequence="0" value="p1_critical"/>
+                <element inactive_on_update="false" label="P3 – Moderate" sequence="2" value="p3_moderate"/>
+            </choice>
+        </element>
+        <element label="Violation Confirmed" max_length="40" name="violation_confirmed" type="boolean"/>
+        <index name="index">
+            <element name="assigned_inspector"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_team"/>
+        </index>
+        <index name="index3">
+            <element name="facility"/>
+        </index>
+    </element>
+</database>

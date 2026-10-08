@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ec847ba1c333879091fe9a2ed401319c" label="Environmental Inspection" max_length="40" name="x_2061044_greenw_0_environmental_inspection" type="collection">
+        <element label="Observations" max_length="40" name="observations" type="html"/>
+        <element choice="1" label="Inspection Type" max_length="40" name="inspection_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Initial" sequence="0" value="initial"/>
+                <element inactive_on_update="false" label="Verification" sequence="2" value="verification"/>
+                <element inactive_on_update="false" label="Follow-up" sequence="1" value="follow_up"/>
+            </choice>
+        </element>
+        <element label="Inspection Number" max_length="40" name="inspection_number" type="float"/>
+        <element label="Previous Violations" max_length="40" name="previous_violations" type="integer"/>
+        <element label="Inspection Date" max_length="40" name="inspection_date" type="glide_date"/>
+        <element label="Risk Score" max_length="40" name="risk_score" type="integer"/>
+        <element label="Complaint" max_length="32" name="complaint" reference="x_2061044_greenw_0_environmental_complaint" type="reference"/>
+        <element label="Violation Found" max_length="40" name="violation_found" type="boolean"/>
+        <element label="Facility" max_length="32" name="facility" reference="x_2061044_greenw_0_environmental_facility" type="reference"/>
+        <element choice="1" label="Risk Level" max_length="40" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+            </choice>
+        </element>
+        <element choice="1" label="Inspection Status" max_length="40" name="inspection_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Assigned" sequence="0" value="assigned"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+            </choice>
+        </element>
+        <element label="Environmental Impact" max_length="40" name="environmental_impact" type="integer"/>
+        <element label="Inspector" max_length="32" name="inspector" reference="sys_user" type="reference"/>
+        <element label="Population Exposure" max_length="40" name="population_exposure" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Evidence" max_length="40" name="evidence" type="file_attachment"/>
+        <element label="pH Value" max_length="38" name="ph_value" type="decimal"/>
+        <element label="Inspector Recommendation" max_length="40" name="inspector_recommendation" type="html"/>
+        <element label="Pollution Severity" max_length="40" name="pollution_severity" type="integer"/>
+        <index name="index">
+            <element name="complaint"/>
+        </index>
+        <index name="index2">
+            <element name="facility"/>
+        </index>
+        <index name="index3">
+            <element name="inspector"/>
+        </index>
+    </element>
+</database>

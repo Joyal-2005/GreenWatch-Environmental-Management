@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="c520cba5c37b479091fe9a2ed4013187" label="Environmental Facility." max_length="40" name="x_2061044_greenw_0_environmental_facility" type="collection">
+        <element choice="1" label="Facility Type" max_length="40" name="facility_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Construction Site" sequence="3" value="construction_site"/>
+                <element inactive_on_update="false" label="Chemical Plant" sequence="1" value="chemical_plant"/>
+                <element inactive_on_update="false" label="Factory" sequence="0" value="factory"/>
+                <element inactive_on_update="false" label="Waste Processing Unit" sequence="4" value="waste_processing_unit"/>
+                <element inactive_on_update="false" label="Hospital" sequence="2" value="hospital"/>
+            </choice>
+        </element>
+        <element label="Permit Expiry" max_length="40" name="permit_expiry" type="glide_date"/>
+        <element label="Contact Person" max_length="40" name="contact_person" type="string"/>
+        <element label="Facility Name" max_length="40" name="facility_name" type="string"/>
+        <element choice="1" label="Risk Level" max_length="40" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="2" value="critical"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="high"/>
+            </choice>
+        </element>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element choice="1" label="Compliance Status" max_length="40" name="compliance_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Suspended" sequence="3" value="suspended"/>
+                <element inactive_on_update="false" label="Non - Compliant" sequence="2" value="non_compliant"/>
+                <element inactive_on_update="false" label="Under Review" sequence="1" value="under_review"/>
+                <element inactive_on_update="false" label="Compliant" sequence="0" value="compliant"/>
+            </choice>
+        </element>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Pervious Violations" max_length="40" name="pervious_violations" type="integer"/>
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Permit Number" max_length="40" name="permit_number" type="string"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="string"/>
+    </element>
+</database>

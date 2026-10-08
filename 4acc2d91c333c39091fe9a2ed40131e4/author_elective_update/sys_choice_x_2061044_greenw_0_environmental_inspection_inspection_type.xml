@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="inspection_type" table="x_2061044_greenw_0_environmental_inspection" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>inspection_type</element>
+            <name>x_2061044_greenw_0_environmental_inspection</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-08 08:57:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>inspection_type</sys_name>
+            <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+            <sys_update_name>sys_choice_x_2061044_greenw_0_environmental_inspection_inspection_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-08 08:57:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inspection_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Initial</label>
+            <language>en</language>
+            <name>x_2061044_greenw_0_environmental_inspection</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-08 08:57:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-08 08:57:42</sys_updated_on>
+            <value>initial</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inspection_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Follow-up</label>
+            <language>en</language>
+            <name>x_2061044_greenw_0_environmental_inspection</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-08 08:57:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-08 08:57:42</sys_updated_on>
+            <value>follow_up</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>inspection_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Verification</label>
+            <language>en</language>
+            <name>x_2061044_greenw_0_environmental_inspection</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-08 08:57:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-08 08:57:42</sys_updated_on>
+            <value>verification</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
