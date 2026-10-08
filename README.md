@@ -1,1 +1,0 @@
-# GreenWatch-Environmental-Management
