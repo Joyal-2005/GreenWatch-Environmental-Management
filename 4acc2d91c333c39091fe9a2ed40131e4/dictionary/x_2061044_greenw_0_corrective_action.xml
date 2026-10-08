@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="47de91f5c37f879091fe9a2ed40131fa" label="Corrective Action" max_length="40" name="x_2061044_greenw_0_corrective_action" type="collection">
+        <element choice="1" label="Action Status" max_length="40" name="action_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Overdue" sequence="3" value="overdue"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+            </choice>
+        </element>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Completion Date" max_length="40" name="completion_date" type="glide_date"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Remarks" max_length="40" name="remarks" type="html"/>
+        <element label="Action Description" max_length="40" name="action_description" type="html"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Compliance Case" max_length="32" name="compliance_case" reference="x_2061044_greenw_0_compliance_case" type="reference"/>
+        <element choice="1" label="Verification Status" max_length="40" name="verification_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Verified" sequence="1" value="verified"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="compliance_case"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="468e89b5c3fb879091fe9a2ed401314a" label="Compliance Case" max_length="40" name="x_2061044_greenw_0_compliance_case" type="collection">
+        <element label="Resolution Notes" max_length="40" name="resolution_notes" type="html"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="P3 - Moderate" sequence="2" value="p3_moderate"/>
+                <element inactive_on_update="false" label="P2 - High" sequence="1" value="p2_high"/>
+                <element inactive_on_update="false" label="P1 - Critical" sequence="0" value="p1_critical"/>
+                <element inactive_on_update="false" label="P4 - Low" sequence="3" value="p4_low"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="40" name="description" type="html"/>
+        <element choice="1" label="Case Status" max_length="40" name="case_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Resolved" sequence="4" value="resolved"/>
+                <element inactive_on_update="false" label="Corrective Action" sequence="2" value="corrective_action"/>
+                <element inactive_on_update="false" label="Verification" sequence="3" value="verification"/>
+                <element inactive_on_update="false" label="Under Review" sequence="1" value="under_review"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closd" sequence="5" value="closd"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Violation Type" max_length="40" name="violation_type" type="string"/>
+        <element label="Complaint" max_length="32" name="complaint" reference="x_2061044_greenw_0_environmental_complaint" type="reference"/>
+        <element label="Dur Date" max_length="40" name="dur_date" type="glide_date"/>
+        <index name="index">
+            <element name="complaint"/>
+        </index>
+    </element>
+</database>

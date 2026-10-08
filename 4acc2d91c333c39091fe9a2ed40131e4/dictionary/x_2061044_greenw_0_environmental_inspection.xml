@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ec847ba1c333879091fe9a2ed401319c" label="Environmental Inspection" max_length="40" name="x_2061044_greenw_0_environmental_inspection" type="collection">
+        <element label="Remarks" max_length="40" name="remarks" type="string"/>
         <element label="Observations" max_length="40" name="observations" type="html"/>
         <element choice="1" label="Inspection Type" max_length="40" name="inspection_type" type="choice">
             <choice>
@@ -11,9 +12,10 @@
         <element label="Inspection Number" max_length="40" name="inspection_number" type="float"/>
         <element label="Previous Violations" max_length="40" name="previous_violations" type="integer"/>
         <element label="Inspection Date" max_length="40" name="inspection_date" type="glide_date"/>
+        <element label="Findings" max_length="65536" name="findings" type="html"/>
         <element label="Risk Score" max_length="40" name="risk_score" type="integer"/>
         <element label="Complaint" max_length="32" name="complaint" reference="x_2061044_greenw_0_environmental_complaint" type="reference"/>
-        <element label="Violation Found" max_length="40" name="violation_found" type="boolean"/>
+        <element label="Violation Confirmed" max_length="40" name="violation_found" type="boolean"/>
         <element label="Facility" max_length="32" name="facility" reference="x_2061044_greenw_0_environmental_facility" type="reference"/>
         <element choice="1" label="Risk Level" max_length="40" name="risk_level" type="choice">
             <choice>
