@@ -4,13 +4,69 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-08 16:31:38</sys_created_on>
-            <sys_id>c0ee9db5c37f879091fe9a2ed40131b1</sys_id>
+            <sys_created_on>2026-10-09 07:39:20</sys_created_on>
+            <sys_id>18aea0c6c3f70b9091fe9a2ed40131c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_2061044_greenw_0_corrective_action" sys_domain="global" view="Default view">4cee9db5c37f879091fe9a2ed40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-08 16:31:38</sys_updated_on>
+            <sys_updated_on>2026-10-09 07:39:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>action_status</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-09 07:39:20</sys_created_on>
+            <sys_id>dcaea0c6c3f70b9091fe9a2ed40131c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2061044_greenw_0_corrective_action" sys_domain="global" view="Default view">4cee9db5c37f879091fe9a2ed40131ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-09 07:39:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compliance_case</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-09 07:39:20</sys_created_on>
+            <sys_id>5caea0c6c3f70b9091fe9a2ed40131c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2061044_greenw_0_corrective_action" sys_domain="global" view="Default view">4cee9db5c37f879091fe9a2ed40131ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-09 07:39:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>completion_date</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-09 07:39:20</sys_created_on>
+            <sys_id>d8aea0c6c3f70b9091fe9a2ed40131c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2061044_greenw_0_corrective_action" sys_domain="global" view="Default view">4cee9db5c37f879091fe9a2ed40131ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-09 07:39:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>verification_status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-09 07:39:20</sys_created_on>
+            <sys_id>58aea0c6c3f70b9091fe9a2ed40131c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2061044_greenw_0_corrective_action" sys_domain="global" view="Default view">4cee9db5c37f879091fe9a2ed40131ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-09 07:39:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
