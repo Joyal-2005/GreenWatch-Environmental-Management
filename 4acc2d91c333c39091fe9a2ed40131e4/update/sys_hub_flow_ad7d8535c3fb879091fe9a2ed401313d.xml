@@ -2,14 +2,13 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=49035000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
         <copied_from_name>FlowTemplate_Empty</copied_from_name>
         <description>Automatically Creates a compliance case when an environmental complaint has a confirmed violation</description>
@@ -17,21 +16,20 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>compliance_case_creation</internal_name>
-        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛ Environmental Complaint Record","reference":"x_2061044_greenw_0_environmental_complaint","reference_display":" Environmental Complaint","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"6b38e12c-f6d5-4e76-8dd7-c4ff103bb5d4":["complaint"]},"attributes":{"":""}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛ Environmental Complaint Record","reference":"x_2061044_greenw_0_environmental_complaint","reference_display":" Environmental Complaint","type":"reference","base_type":"reference","usedInstances":{"6b38e12c-f6d5-4e76-8dd7-c4ff103bb5d4":["complaint"]},"attributes":{}}]</label_cache>
+        <master_snapshot>1da77bf1c3330b9091fe9a2ed4013185</master_snapshot>
         <master_snapshot_digest/>
         <name>Compliance Case Creation</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id/>
+        <remote_trigger_id>0688c0c6c3b30b9091fe9a2ed40131e5</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -39,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ad7d8535c3fb879091fe9a2ed401313d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Compliance Case Creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
@@ -47,14 +45,57 @@
         <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
         <sys_update_name>sys_hub_flow_ad7d8535c3fb879091fe9a2ed401313d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-08 15:29:27</sys_updated_on>
+        <sys_updated_on>2026-10-09 04:52:52</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>0f9055f9c3fb879091fe9a2ed4013122</version_record>
+        <version_record>ae8804c6c3b30b9091fe9a2ed401319e</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ad7d8535c3fb879091fe9a2ed401313d"/>
     <sys_variable_value action="delete_multiple" query="document_key=ad7d8535c3fb879091fe9a2ed401313d"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2061044_greenw_0_environmental_complaint">violation_confirmed=true<item endquery="false" field="violation_confirmed" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 04:52:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0688c0c6c3b30b9091fe9a2ed40131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:52</sys_updated_on>
+        <table>x_2061044_greenw_0_environmental_complaint</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ad7d8535c3fb879091fe9a2ed401313d</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 04:52:52</sys_created_on>
+        <sys_id>0288c0c6c3b30b9091fe9a2ed40131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:52</sys_updated_on>
+        <trigger display_value="">0688c0c6c3b30b9091fe9a2ed40131e5</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ad7d8535c3fb879091fe9a2ed401313d^sys_idNOT IN0288c0c6c3b30b9091fe9a2ed40131e6"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=ad7d8535c3fb879091fe9a2ed401313d"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=ad7d8535c3fb879091fe9a2ed401313d^sys_idNOT IN6d7d8535c3fb879091fe9a2ed401313e"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -74,7 +115,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -134,14 +175,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-08 15:15:58</sys_created_on>
         <sys_id>378d4935c3fb879091fe9a2ed40131de</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-08 15:15:58</sys_updated_on>
+        <sys_updated_on>2026-10-09 03:39:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -244,7 +285,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -304,14 +345,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-08 15:15:59</sys_created_on>
         <sys_id>ff8d8935c3fb879091fe9a2ed4013105</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-08 15:15:59</sys_updated_on>
+        <sys_updated_on>2026-10-09 03:39:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -339,12 +380,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-08 15:15:57</sys_created_on>
         <sys_id>938d0935c3fb879091fe9a2ed401313b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-08 15:17:27</sys_updated_on>
+        <sys_updated_on>2026-10-09 04:38:46</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_update</trigger_type>
         <updation_source/>
@@ -355,7 +396,7 @@
         <action_type_parent/>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
         <display_text/>
         <flow display_value="Compliance Case Creation">ad7d8535c3fb879091fe9a2ed401313d</flow>
         <generation_source/>
@@ -365,10 +406,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-08 15:17:47</sys_created_on>
         <sys_id>5afd45bdc3bb879091fe9a2ed401319a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-08 15:29:17</sys_updated_on>
+        <sys_updated_on>2026-10-09 05:38:09</sys_updated_on>
         <ui_id>6b38e12c-f6d5-4e76-8dd7-c4ff103bb5d4</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9VTXWvbMBT9K0HPxthJFtq8jZQ8dS2sXV66RsjWdSyQZU+Sk3gh/31Xkp2EfrANxqB+sq7O/ThH9zwdiOBkTmYckuvrdJZP0slknCTjq2mazSZZOuYTBmlGIqJYBYjcMtmCwbP/wUBeV41kQtnvbZJM+OHwreHMAqdpnLdag7LH4zpnBqixzLYmwOoG1LrRotbCdiHUjGkpNuWag8m1aKyoVbjAZlwYbNKt/mfPvBSSYy0yf3qOSMM0CmBBk/nhxdWfKihZBhKhSwGSmzcktV3jzhYcOws0SBzit33yY385WvWXteZuqDQisLegOOA0BZMGIlIxhbLUuiNzq1sMaGD8XsnuhChRQyxKHHZvxE9sn84S/zl0AUgyh4A4HWn/GiFc3DDLHrB+blvdQ/OyFjlS8vJwKFgr7eIyFgD3XvCQYlkmh+xatpW6C+KQU4Hh8THS4styaBxbN38gVzyU9e7rMORSKK9LT1TWOZOnE7NWi6y1bpwDAQkV1qEVaxqhNrTR9Vb4ZLdo8UbiIS5kvcOeRmxUzHI3d4zasniJ8RsfXjEtHIkvWAaTjxExnVlIZsyZCmpIf7RukkCsp0C9Cl4C6pfCJfuF/IytttAPfowGu6aQfHp32WB63q2LmmfL7uk4maXJdEo3GkDtaEK9owRzr+t889pyixNgtAiAv/TH70ce/PHoV+FtCoNFXsZuL3NHd+Git0byr6xx9ZFM0dP48K54zwvPvwCi+dcAvAYAAA==</values>
@@ -449,6 +490,469 @@
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ad7d8535c3fb879091fe9a2ed401313d"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ad7d8535c3fb879091fe9a2ed401313d"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ad7d8535c3fb879091fe9a2ed401313d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Automatically Creates a compliance case when an environmental complaint has a confirmed violation</description>
+        <flow_priority/>
+        <internal_name>compliance_case_creation</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛ Environmental Complaint Record","reference":"x_2061044_greenw_0_environmental_complaint","reference_display":" Environmental Complaint","type":"reference","base_type":"reference","usedInstances":{"6b38e12c-f6d5-4e76-8dd7-c4ff103bb5d4":["complaint"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Compliance Case Creation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Compliance Case Creation">ad7d8535c3fb879091fe9a2ed401313d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1da77bf1c3330b9091fe9a2ed4013185</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:52</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1da77bf1c3330b9091fe9a2ed4013185^sys_idNOT IN95a77bf1c3330b9091fe9a2ed4013187"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1da77bf1c3330b9091fe9a2ed4013185</id>
+        <name>Compliance Case Creation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:06</sys_created_on>
+        <sys_id>95a77bf1c3330b9091fe9a2ed4013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 03:39:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=95a77bf1c3330b9091fe9a2ed4013187"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1da77bf1c3330b9091fe9a2ed4013185^sys_idNOT IN21a77bf1c3330b9091fe9a2ed40131c1,29a77bf1c3330b9091fe9a2ed40131cd,95a77bf1c3330b9091fe9a2ed4013189"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Compliance Case Creation">1da77bf1c3330b9091fe9a2ed4013185</model>
+        <model_id>1da77bf1c3330b9091fe9a2ed4013185</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:06</sys_created_on>
+        <sys_id>21a77bf1c3330b9091fe9a2ed40131c1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:38:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21a77bf1c3330b9091fe9a2ed40131c1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Compliance Case Creation">1da77bf1c3330b9091fe9a2ed4013185</model>
+        <model_id>1da77bf1c3330b9091fe9a2ed4013185</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_id>29a77bf1c3330b9091fe9a2ed40131cd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29a77bf1c3330b9091fe9a2ed40131cd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Compliance Case Creation">1da77bf1c3330b9091fe9a2ed4013185</model>
+        <model_id>1da77bf1c3330b9091fe9a2ed4013185</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:06</sys_created_on>
+        <sys_id>95a77bf1c3330b9091fe9a2ed4013189</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95a77bf1c3330b9091fe9a2ed4013189"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1da77bf1c3330b9091fe9a2ed4013185^sys_idNOT INe1a77bf1c3330b9091fe9a2ed40131fd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Compliance Case Creation">1da77bf1c3330b9091fe9a2ed4013185</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_id>e1a77bf1c3330b9091fe9a2ed40131fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:38:49</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VaW2/bNhj9K4KeNsAddPElzp4yJ1kDpA3guN1DFwgUSdnEZMqlKCVe0f++j7rYsm6xY7lznxKTFHm+j+c7h7T85ZvuI5f6+qU+Q65P9Z7OuKSCI3+2XlFolqrZ4Wip+paIEyQDsdYvpYhoT/dEsJzR5cpHEgZ7yA+hMRCECv3S7Okx8iP6uA7vCMwEzyfTZHPqWTd8fnEsY2ga/b4zF5TyZ8dwKI+ZCPiScol8BwdqCUAGDxEWwv/rz9mz2k1xpDYpjMQL5hNBuX755amnr5CA1aVC9q3UxRQ8kxBkWtTAtmlblmFYF33THdquaREbUXQBE5ZTVQpH1mRsmwv6IiknlGzSVEmmoIg8cH9dGPESsn9hzgtD9XoUEGOapnLz0ckSkjbjRcAwfVhJFvC0JUWXdgZ+tOQfU9QqldRDkS/zVEJLFMJ8dKWAQgpzHN7jInie5gveMp7ElHX6AUb+5hOSUjA3kjRUafaYDwl30oyEQSQS9NObycP02vnrajZ5fzN1pjePs+ndZHZzrX9P4nK+RmrGFGGGxUnD+b7Z/1tGfbVtPFq6gKanh1iwlbzCksU5Fb/3tvSeBJywJCsViuO8K9yleB59G8cNo5HluLBizvSYBTANtAGlucfEkpK/I8OwiWJAldwHk9h1x4hQ1EDi4ahA4mJCahDLmtwUg26jc9bSzOe+YfxPjM5k662EzqN2ghUVKlpo1T9f3U/eX3388+bx9+zv7fThQ/7/7AFQPCMuQ0cGDiLEKeQU1CLd+GVAqH+9xQntbD6H2mF8Fcnw1cpIc1Itj9cLQ0QcpnA2+1ktj2QDNjtxz0LA9wWK+5F+jdLtewf65uVJzyLy7rMFphHXAq7hSEC2pQY00fLFtAS2opZ3t0TzbMtgYp9iWeCW9yksfvrAwpDxeSGYJizJgCoYf11ElOv3MRieulSO6pbEpXiO1YkhJmbfHQ2NkVIJ07BdzzRGxgB5xDaMsV3QiSqYRpSyRJgO9eIwtQgTgvp77Hk5sRlko1ghexE43mV/HroiRiZKk26gmR1BsxS0krjaB6nrhoxp8/UuJ9tC6/iYgUiM4AmSx7jPMWIPVfT84Bn093hF9AJB5yKIOClLkVpCY/B3Z8RptNBF+J92FNsR2i/Zpv56brq43ZSc1oivO1DEPsVkNOwPDRBCGzTQHYzHLkaW542GI2qQkiJuYdRiO2MlfGWz4zq2NKliLX3jOtYfoIdHAKxo48EAj1fFjI61mpj2/Rzq97yg3AGowvGVvlVEcO4zQvO+bmu8snS8repj69z2LshgMBrhEdyOoM69PnWR2bcGaDwa2nRYqvMKlDaYsiYzJ7wzheswWb5BAz6lXef1jcApyRpSKZX1HO3XyeMoXa9glWpftERVAqGp7Gp324HaIwXjS67Op/LvQC4qzg1I/oD2HSTqFPgx4O9q0J3wqsXhLrBP4hqQnds5o8SoeHcTjj5tXNjjAfHsehUaWXUqtAXTDPNMzx17EiBupFLdAWTfcoxrq7rxxPCGiiqRo3iUaDnrdJUUs/OkWKdLin30+SqvwMZL51vA/kQulxw4OrO6gFMn8GrFmnla9iUkJZq71uSCQm59OFHDypqCcUI3SU/KFa+DZi078pzMxtSelJNyHWjQoYkfkpbTeFmJN93enrE3dsnYbjhVD5pP1c2mVuo+U2c7mBhxHc9a7e2wectz1hpcoYx2ebCndXUadb1/HRd1rYO9FvXx3tR2969Bcf6uo0DP0m3owmtw6VqAj33t0iLkNKZix0NuIflJoxatiFLRky0dcQbtDl4gPk/fbu1gQHihpUO0dMgJbdR/RutwN+lQYFBcqn6zr+WhASqZpzr7g42r5Uci2QvQUAp4cr7eqXbcxUswbI4Hlk0usG2O7eovPsyCae3WQTPCRpd65QcgTS61YMnL4MLyGYUlW9JEEzcvk7UlknhBw54GHEtevCSSyUQok9G/6R1e5zCtbkediTXyPW4qlUZTaOFsXGZ7nQvUlH9ckoqiD7Re3FrCNzsJ3+oifPtt4fePtsG8Pmt9MMtex96X2dmb/O7pP59XDcIGJwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1da77bf1c3330b9091fe9a2ed4013185^sys_idNOT IN65a77bf1c3330b9091fe9a2ed40131fa"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Compliance Case Creation">1da77bf1c3330b9091fe9a2ed4013185</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_id>65a77bf1c3330b9091fe9a2ed40131fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 03:39:07</sys_updated_on>
+        <ui_id>6b38e12c-f6d5-4e76-8dd7-c4ff103bb5d4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VTXWvbMBT9K0HPxthJFtq8jZQ8dS2sXV66RsjWdSyQZU+Sk3gh/31Xkp2EfrANxqB+sq7O/ThH9zwdiOBkTmYckuvrdJZP0slknCTjq2mazSZZOuYTBmlGIqJYBYjcMtmCwbP/wUBeV41kQtnvbZJM+OHwreHMAqdpnLdag7LH4zpnBqixzLYmwOoG1LrRotbCdiHUjGkpNuWag8m1aKyoVbjAZlwYbNKt/mfPvBSSYy0yf3qOSMM0CmBBk/nhxdWfKihZBhKhSwGSmzcktV3jzhYcOws0SBzit33yY385WvWXteZuqDQisLegOOA0BZMGIlIxhbLUuiNzq1sMaGD8XsnuhChRQyxKHHZvxE9sn84S/zl0AUgyh4A4HWn/GiFc3DDLHrB+blvdQ/OyFjlS8vJwKFgr7eIyFgD3XvCQYlkmh+xatpW6C+KQU4Hh8THS4styaBxbN38gVzyU9e7rMORSKK9LT1TWOZOnE7NWi6y1bpwDAQkV1qEVaxqhNrTR9Vb4ZLdo8UbiIS5kvcOeRmxUzHI3d4zasniJ8RsfXjEtHIkvWAaTjxExnVlIZsyZCmpIf7RukkCsp0C9Cl4C6pfCJfuF/IytttAPfowGu6aQfHp32WB63q2LmmfL7uk4maXJdEo3GkDtaEK9owRzr+t889pyixNgtAiAv/TH70ce/PHoV+FtCoNFXsZuL3NHd+Git0byr6xx9ZFM0dP48K54zwvPvwCi+dcAvAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=65a77bf1c3330b9091fe9a2ed40131fa"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:06</sys_created_on>
+        <sys_id>65a77bf1c3330b9091fe9a2ed40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 03:39:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_id>6da77bf1c3330b9091fe9a2ed40131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 03:39:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_id>a5a77bf1c3330b9091fe9a2ed40131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 03:39:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1da77bf1c3330b9091fe9a2ed4013185"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ad7d8535c3fb879091fe9a2ed401313d</sys_id>
+        <latest_snapshot>1da77bf1c3330b9091fe9a2ed4013185</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ad7d8535c3fb879091fe9a2ed401313d^sys_idNOT INf5a7bbf1c3330b9091fe9a2ed401310b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"f5a7bbf1c3330b9091fe9a2ed401310b","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>ad7d8535c3fb879091fe9a2ed401313d</plan_id>
+        <snapshot>59e2584ec3f30b9091fe9a2ed401310a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-09 03:39:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5a7bbf1c3330b9091fe9a2ed401310b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-09 04:52:52</sys_updated_on>
+        <trigger display_value="">0688c0c6c3b30b9091fe9a2ed40131e5</trigger>
+    </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ad7d8535c3fb879091fe9a2ed401313d"/>
 </record_update>

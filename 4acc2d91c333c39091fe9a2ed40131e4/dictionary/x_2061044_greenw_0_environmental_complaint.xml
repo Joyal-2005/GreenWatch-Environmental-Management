@@ -51,6 +51,7 @@
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Evidence" max_length="40" name="evidence" type="file_attachment"/>
         <element label="Assigned Team" max_length="32" name="assigned_team" reference="sys_user_group" type="reference"/>
+        <element label="Violation Confirmed" max_length="40" name="violation_confirme0" type="boolean"/>
         <element label="Target Resolution Date" max_length="40" name="target_resolution_date" type="glide_date"/>
         <element label="Complaint Number" max_length="40" name="complaint_number" type="float"/>
         <element label="Reporter Phone" max_length="40" name="reporter_phone" type="string"/>
