@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Submit Environmental Complaint">a5b3620ec3774b9091fe9a2ed4013118</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 03:54:11</sys_created_on>
+        <sys_id>48b44d5ac37b8b9091fe9a2ed401317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Submit Environmental Complaint</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name>sc_cat_item_category_48b44d5ac37b8b9091fe9a2ed401317f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 03:54:11</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

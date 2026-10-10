@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Submit Environmental Complaint">a5b3620ec3774b9091fe9a2ed4013118</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 03:53:57</sys_created_on>
+        <sys_id>78a4895ac37b8b9091fe9a2ed40131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit Environmental Complaint.Users with 'Admin' Role</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_78a4895ac37b8b9091fe9a2ed40131e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 03:53:57</sys_updated_on>
+        <user_criteria display_value="Users with 'Admin' Role">cb8e06e9d7103100f2d224837e610339</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</application>
+        <file_path/>
+        <instance_id>ee46f2d21b3279d052a243f4bd4bcbeb</instance_id>
+        <instance_name>dev230974</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_78a4895ac37b8b9091fe9a2ed40131e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Submit Environmental Complaint">a5b3620ec3774b9091fe9a2ed4013118</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-10 03:53:57</sys_created_on><sys_id>78a4895ac37b8b9091fe9a2ed40131e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Submit Environmental Complaint.Users with 'Admin' Role</sys_name><sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package><sys_policy/><sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_78a4895ac37b8b9091fe9a2ed40131e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-10 03:53:57</sys_updated_on><user_criteria display_value="Users with 'Admin' Role">cb8e06e9d7103100f2d224837e610339</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>955003124</payload_hash>
+        <record_name>Submit Environmental Complaint.Users with 'Admin' Role</record_name>
+        <reverted_from/>
+        <source>d16fb8b1c37b879091fe9a2ed4013192</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 03:53:57</sys_created_on>
+        <sys_id>70a4895ac37b8b9091fe9a2ed40131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a123f233540000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 03:53:57</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>3ca4895ae47b8b90616aa3a197256eec</update_guid>
+        <update_guid_history>3ca4895ae47b8b90616aa3a197256eec:955003124</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Submit Environmental Complaint.Users with 'Admin' Role">04b44d5ac37b8b9091fe9a2ed401318a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 03:54:11</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>718cbc72493e4170b8d0fe8791e2a100</sys_id>
+        <sys_metadata>78a4895ac37b8b9091fe9a2ed40131e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit Environmental Complaint.Users with 'Admin' Role</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_scope_delete display_value="">0a74aa0b4ddc449c810273e0a83ec890</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_78a4895ac37b8b9091fe9a2ed40131e7</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_78a4895ac37b8b9091fe9a2ed40131e7">70a4895ac37b8b9091fe9a2ed40131ee</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 03:54:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

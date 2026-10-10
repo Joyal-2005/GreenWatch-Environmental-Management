@@ -32,7 +32,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Submit Environmental Complaint</name>
+        <name>Record Environmental Inspection</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -56,7 +56,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></post_insert_script>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a5b3620ec3774b9091fe9a2ed4013118&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2b56895ec37b8b9091fe9a2ed4013145&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
@@ -83,52 +83,52 @@
 * Use `producer.var1` to access variables
 */]]></script>
         <secondary_owners/>
-        <short_description>Allows Citizens to report environmental pollution incidents</short_description>
+        <short_description>Record inspection findings for environmental complaints</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state/>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-10-09 16:10:52</sys_created_on>
-        <sys_id>a5b3620ec3774b9091fe9a2ed4013118</sys_id>
-        <sys_mod_count>35</sys_mod_count>
-        <sys_name>Submit Environmental Complaint</sys_name>
+        <sys_created_on>2026-10-10 04:01:31</sys_created_on>
+        <sys_id>2b56895ec37b8b9091fe9a2ed4013145</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Record Environmental Inspection</sys_name>
         <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
         <sys_policy/>
         <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
-        <sys_update_name>sc_cat_item_producer_a5b3620ec3774b9091fe9a2ed4013118</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-10 03:53:40</sys_updated_on>
-        <table_name>x_2061044_greenw_0_environmental_complaint</table_name>
+        <sys_update_name>sc_cat_item_producer_2b56895ec37b8b9091fe9a2ed4013145</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-10-10 04:49:38</sys_updated_on>
+        <table_name>x_2061044_greenw_0_environmental_inspection</table_name>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>35</version>
+        <version>37</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item_producer>
-    <sys_translated_text action="delete_multiple" query="documentkey=a5b3620ec3774b9091fe9a2ed4013118"/>
-    <fx_price action="delete_multiple" query="id=a5b3620ec3774b9091fe9a2ed4013118"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2b56895ec37b8b9091fe9a2ed4013145"/>
+    <fx_price action="delete_multiple" query="id=2b56895ec37b8b9091fe9a2ed4013145"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
-        <id>a5b3620ec3774b9091fe9a2ed4013118</id>
+        <id>2b56895ec37b8b9091fe9a2ed4013145</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-10-09 16:10:53</sys_created_on>
-        <sys_id>35b3620ec3774b9091fe9a2ed401311d</sys_id>
+        <sys_created_on>2026-10-10 04:01:32</sys_created_on>
+        <sys_id>ff56895ec37b8b9091fe9a2ed4013146</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-09 16:10:53</sys_updated_on>
+        <sys_updated_on>2026-10-10 04:01:32</sys_updated_on>
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>

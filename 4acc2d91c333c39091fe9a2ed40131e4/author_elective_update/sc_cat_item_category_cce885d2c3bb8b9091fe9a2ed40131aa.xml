@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Record Environmental Inspection">2b56895ec37b8b9091fe9a2ed4013145</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 04:12:29</sys_created_on>
+        <sys_id>cce885d2c3bb8b9091fe9a2ed40131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Record Environmental Inspection</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name>sc_cat_item_category_cce885d2c3bb8b9091fe9a2ed40131aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 04:12:29</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</application>
+        <file_path/>
+        <instance_id>ee46f2d21b3279d052a243f4bd4bcbeb</instance_id>
+        <instance_name>dev230974</instance_name>
+        <name>sc_cat_item_category_cce885d2c3bb8b9091fe9a2ed40131aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Record Environmental Inspection">2b56895ec37b8b9091fe9a2ed4013145</sc_cat_item><sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-10 04:12:29</sys_created_on><sys_id>cce885d2c3bb8b9091fe9a2ed40131aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Services.Record Environmental Inspection</sys_name><sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package><sys_policy/><sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope><sys_update_name>sc_cat_item_category_cce885d2c3bb8b9091fe9a2ed40131aa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-10 04:12:29</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1682517411</payload_hash>
+        <record_name>Services.Record Environmental Inspection</record_name>
+        <reverted_from/>
+        <source>d16fb8b1c37b879091fe9a2ed4013192</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 04:12:29</sys_created_on>
+        <sys_id>0ce885d2c3bb8b9091fe9a2ed40131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1240329890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 04:12:29</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>c4e885d2e3bb8b90aeb060d09956d8b1</update_guid>
+        <update_guid_history>c4e885d2e3bb8b90aeb060d09956d8b1:-1682517411</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Services.Record Environmental Inspection">8a198dd2c3bb8b9091fe9a2ed40131c1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 04:13:26</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>01ea9f6f17324aac909e950362aa99e4</sys_id>
+        <sys_metadata>cce885d2c3bb8b9091fe9a2ed40131aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Record Environmental Inspection</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_scope_delete display_value="">0a74aa0b4ddc449c810273e0a83ec890</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_cce885d2c3bb8b9091fe9a2ed40131aa</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_cce885d2c3bb8b9091fe9a2ed40131aa">0ce885d2c3bb8b9091fe9a2ed40131b2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 04:13:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Inspection status">624d091ec3bb8b9091fe9a2ed4013184</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-10 04:34:16</sys_created_on>
+        <sys_id>5fdd895ec3bb8b9091fe9a2ed40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Completed</sys_name>
+        <sys_package display_value="GreenWatch Environmental Management" source="x_2061044_greenw_0">4acc2d91c333c39091fe9a2ed40131e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GreenWatch Environmental Management">4acc2d91c333c39091fe9a2ed40131e4</sys_scope>
+        <sys_update_name>question_choice_5fdd895ec3bb8b9091fe9a2ed40131bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-10 04:34:16</sys_updated_on>
+        <text>Completed</text>
+        <value>completed</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=5fdd895ec3bb8b9091fe9a2ed40131bc"/>
+</record_update>
